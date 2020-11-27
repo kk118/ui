@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui 2-2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            background-color: tomato;
+            font-size: x-large;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            /* width : 너비가 고정된 값 */
+            /* max-width : 최대 너비를 설정하는 속성 */
+            /* min-width : 최소 너비를 설정하는 속성 */
+           max-width: 960px;
+           /* 중앙 정렬 공식 */
+            margin: 0 auto;
+        }
+        .box {
+            float: left;
+        }
+
+        .box-img {
+            float: left;
+            width: 70%;
+            /* padding: 10px; */
+            
+        }
+
+        .box-img img {
+            width: 100%;
+        }
+
+        .text1 {
+            /* padding: 10px; */
+            margin: 0px;
+            background-color: wheat;
+        }
+        .text1 h2{
+            /* padding: 10px; */
+            margin: 0px;
+        }
+        .text2 {
+            float: left;
+            width: 25%;
+        }
+
+        
+
+        .text2 .text2detail{
+            /* float: right; */
+            background-color: wheat;
+            /* padding: 10px; */
+            margin: 15px;
+
+        }
+        .text3detail {
+            margin: 15px;
+            
+            background-color: wheat;
+        }
+        .box::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Weekly Ping</h2>
+    </header>
+    <main>
+        <div class="box">
+            <div class="box-img">
+                <div class="imgdetail">
+                    <img src="./images/img_notebook.jpg" alt="">
+                </div>
+                <div class="text1">
+                    <h2>Notebook</h2>
+                    <p>잠, 다하지 하늘에는 있습니다. 이네들은 딴은 시인의 있습니다. 하나에 때 별 까닭입니다. 이런 당신은 새워 아침이 어머니 듯합니다. 내 하나 봄이 이름을 오면 많은 비둘기,
+                        봅니다. 이런 않은 슬퍼하는 위에도 멀리 프랑시스 라이너 언덕 거외다. 노새, 동경과 써 마디씩 봅니다.</p>
+                </div>
+            </div>
+            <div class="text2">
+                <div class="text2detail">
+                    <h2>New News!</h2>
+                    <p>잠, 다하지 하늘에는 있습니다. 이네들은 딴은 시인의 있습니다. 하나에 때 별 까닭입니다. 이런 당신은 새워 아침이 어머니 듯합니다. 내 하나 봄이 이름을 오면 많은 비둘기,
+                        봅니다. 이런 않은 슬퍼하는 위에도 멀리 프랑시스 라이너 언덕 거외다. 노새, 동경과 써 마디씩 봅니다.</p>
+                </div>
+                <div class="text3detail">
+                    <h2>Very New News!</h2>
+                    <p>잠, 다하지 하늘에는 있습니다. 이네들은 딴은 시인의 있습니다. 하나에 때 별 까닭입니다. 이런 당신은 새워 아침이 어머니 듯합니다. 내 하나 봄이 이름을 오면 많은 비둘기,
+                        봅니다. 이런 않은 슬퍼하는 위에도 멀리 프랑시스 라이너 언덕 거외다. 노새, 동경과 써 마디씩 봅니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

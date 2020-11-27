@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            color: #fff;
+            background-color: cadetblue;
+            padding: 10px;
+        }
+        .box {
+            /* margin: 10px; */
+            width: 960px;
+            /* 공식 */
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 10px 0px;
+        }
+
+        .boxdetail img{
+            width: 100%;
+
+        }
+
+        .boxdetail {
+            /* float: left; */
+            width: 33.3%;
+        }
+        .boxdetail::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Summer Holiday</h1>
+    </header>
+    <div class="box">
+        <div class="boxdetail">
+            <img src="./images/img_vernazza.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>Vernazza</h3>
+            <p>설명</p>
+        </div>
+
+        <div class="boxdetail">
+            <img src="./images/img_riomaggiore.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>Riomaggiore</h3>
+        </div>
+
+        <div class="boxdetail">
+            <img src="./images/img_5terre.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>5terre</h3>
+        </div>
+
+        <div class="boxdetail">
+            <img src="./images/img_corniglia.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>Corniglia</h3>
+        </div>
+
+        <div class="boxdetail">
+            <img src="./images/img_manarola.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>Manarola</h3>
+        </div>
+
+        <div class="boxdetail">
+            <img src="./images/img_monterosso.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>monterosso</h3>
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>

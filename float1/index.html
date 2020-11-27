@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html 태그의 너비, 높이의 기준을 어디에 두는가를 설정하는 속성 */
+        * {box-sizing: border-box;}
+        body {
+            font-family: initial;
+        }
+        header, .header {
+            background-color: ivory;
+            /* 컨텐츠 영역과 외부 테두리 선 사이의 빈공간 */
+            padding: 30px;
+            /* text를 중앙 정렬 */
+            text-align: center;
+            font-size: 35px;
+        }
+
+        footer, .footer {
+            background-color: khaki;
+            padding: 10px;
+            text-align: center;
+        }
+
+        aside, section, .aside, .section {
+            float: left;
+            width: 33.3%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        main::after, .main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .boxa { background-color: lawngreen;}
+        .boxb { background-color: lightcoral;}
+        .boxc { background-color: lightseagreen;}
+
+        @media (max-width: 576px){
+            aside { width: 100%;}
+            section { width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <!-- 시멘틱 태그 사용 -->
+    <!-- header 영역 -->
+    <header>
+        <h2>Header</h2>
+    </header>
+    <!-- main 영역 -->
+    <main>
+        <!-- 왼쪽 싸이드바 -->
+        <aside class="boxa">사이드바</aside>
+        <!-- 메인 컨텐츠 -->
+        <section class="boxb">메인 컨텐츠</section>
+        <!-- 오른쪽 사이드바 -->
+        <aside class="boxc">오른쪽 사이드바</aside>
+    </main>
+    <!-- Footer 영역 -->
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+    
+    
+    <!-- 전통적인 방법 -->
+    
+</body>
+</html>

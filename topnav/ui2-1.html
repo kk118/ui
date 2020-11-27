@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui2</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            
+            background-color: tomato;
+            padding: 20px; /*padding : 컨텐츠 테두리 사이공간*/
+        }
+        header h1 {
+            font-size: xx-large;
+            margin: 0px;
+            color: white;
+        }
+        /* display : block 인 태그에 width의 크기를 지정하고 margin 값 중 left, right auto로 주면 중앙 정렬됨 */
+        section {
+            width: 960px;
+            /* 공식 */
+            margin: 0 auto;
+        }
+        article {
+            margin: 10px;
+        }
+        /* 이미지를 넣기 위한 공간 */
+        .box-img {
+            float: left;
+            width: 33%;
+        }
+        /* 부모 태그의 크기만큼 이미지의 크기를 설정하기 위함 */
+        .box-img img { width: 100%;}
+
+        /* text를 입력하기 위한 공간 */
+        .box-text {
+            float: left;
+            width: 67%;
+        }
+        article::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>제목부분</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div class="box-img">
+                    <img src="./images/img_5terre.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>5 terre</h2>
+                    <p>설명</p>
+                </div>
+            </article>
+            <article>
+                <div class="box-img">
+                    <img src="./images/img_5terre.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>5 terre</h2>
+                    <p>설명</p>
+                </div>
+            </article>
+            <article>
+                <div class="box-img">
+                    <img src="./images/img_5terre.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>5 terre</h2>
+                    <p>설명</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
