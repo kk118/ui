@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: teal;
+    padding: 15px;
+    /* 아래의  main 부분과 거리를 두기 위한 공간 */
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: white;
+    /* font-weight : bold = 700하고 동일, normal = 400하고 동일 */
+    font-weight: normal;
+    font-size: 35px;
+}
+
+header .left {
+    float: left;
+}
+
+header .right {
+    float: right;
+    text-align: right;
+}
+
+.fa {
+    color: white;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+main {
+    /* 좌우 측에 10px씩 공간 확보 */
+    padding: 0px 10px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+    width: 66%;
+    /* 왼쪽 컨텐츠 영역 중 좌우측의 공간 10px 확보 */
+    /* 왼쪽은 총 20px확보 (main 태그의 padding과 left의 padding의 결과 */
+    padding: 0px 10px;
+}
+
+/* div.pic는 태그 선택자로 태그명이div 이면서 클래스 명이 pic인 태그를 선택 */
+/* 이미지의 크기를 최대크기로 사용 */
+div.pic,
+div.pic>img {
+    width: 100%;
+}
+
+div.info h2 {
+    font-weight: 400;
+    margin: 16px 0px;
+}
+
+div.info table {
+    width: 100%;
+    /* table의 각각의 column의 인접 테두리선을 하나로 합하여 줌 */
+    border-collapse: collapse;
+}
+
+div.info th,
+div.info td {
+    padding-left: 10px;
+    border: none;
+}
+
+div.info th {
+    background-color: teal;
+    color: white;
+}
+
+div.info tr {
+    height: 50px;
+    text-align: left;
+}
+
+/* nth-child() : 주로 표 사용 시 짝수 혹은 홀수 별로 선택하기 위한 선택자, odd(홀수), even(짝수) */
+div.info tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.right {
+    float: left;
+    width: 33%;
+    padding: 0px 10px;
+}
+
+.right>* {
+    margin: 15px 0px;
+    font-weight: 400;
+}
+
+.right h1 {
+    font-size: 36px;
+}
