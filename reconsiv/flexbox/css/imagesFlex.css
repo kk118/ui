@@ -1,0 +1,20 @@
+* { box-sizing: border-box;}
+body {
+    margin: 0;
+    padding: 0;
+
+}
+main {
+    display: flex;
+    
+}
+
+article {
+    display: flex;
+    flex: 25%;
+    /* width: 100%; */
+   }
+article img {
+    padding: 10px;
+    width: 100%;
+}

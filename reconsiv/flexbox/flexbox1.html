@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,10 @@
             background-color: lightgray;
         }
 
-        #div01 { background-color: dodgerblue; }
+        #div01 {
+            background-color: dodgerblue;
+        }
+
         #div02 {
             background-color: dodgerblue;
             display: flex;
@@ -26,6 +30,7 @@
     <link rel="stylesheet" href="./css/flexbox1.css">
 
 </head>
+
 <body>
     <h3>기본값</h3>
     <div id="div01">
@@ -39,7 +44,8 @@
         <div class="box">8</div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <h3>flexbox 사용</h3>
     <div id="div02">
@@ -53,7 +59,8 @@
         <div class="box">8</div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div id="div03">
         <h3>flex-direction : column</h3>
@@ -82,7 +89,8 @@
         </div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div id="div04">
         <h3>flex-wrap : wrap</h3>
@@ -134,7 +142,8 @@
         </div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div id="div05">
         <h3>flex-flow : row wrap</h3>
@@ -154,9 +163,11 @@
         </div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
     <h2>flex 정렬</h2>
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div id="div06">
         <h3>justify-content : center</h3>
@@ -201,7 +212,8 @@
         </div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div id="div07">
         <h3>align-item : center</h3>
@@ -230,13 +242,114 @@
         </div>
         <h3>align-item : baseline</h3>
         <div class="flex-container2 baseline">
-            <div><h1>1</h1></div>
-            <div><h6>2</h6></div>
-            <div><h4>3</h4></div>
+            <div>
+                <h1>1</h1>
+            </div>
+            <div>
+                <h6>2</h6>
+            </div>
+            <div>
+                <h4>3</h4>
+            </div>
             <div><small>4</small></div>
+        </div>
+        <div id="div08">
+            <h3>align-content : space-between</h3>
+            <div class="flex-container3 space-between">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+           
+            <h3>align-content : space-around</h3>
+            <div class="flex-container3 sspace-around">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <h3>align-content : stretch</h3>
+            <div class="flex-container3 stretch">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <h3>align-content : center</h3>
+            <div class="flex-container3 center">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <h3>align-content : flex-start</h3>
+            <div class="flex-container3 flex-start">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <h3>align-content : flex-end</h3>
+            <div class="flex-container3 flex-end">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
         </div>
     </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
 </html>

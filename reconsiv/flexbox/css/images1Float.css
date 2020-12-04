@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    text-align: center;
+}
+
+article {
+    padding: 10px 2.5px;
+    float: left;
+    width: 25%;
+}
+
+article img {
+    width: 100%
+}
+
+
+@media all and (max-width:992px) {
+    article {
+        float: left;
+        width: 33%;
+    }
+}
+
+
+@media all and (max-width:768px) {
+    article {
+        float: left;
+        width: 50%;
+
+    }
+}
+
+@media all and (max-width:576px) {
+    article {
+        width: 100%;
+    }
+}

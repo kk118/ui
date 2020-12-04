@@ -1,0 +1,89 @@
+* { box-sizing: border-box;}
+
+/* font-family: 'Major Mono Display', monospace; */
+
+body { 
+    margin: 0;
+    font-family: 'Yeon Sung', cursive;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: tomato;
+}
+nav li > a {
+    display: inline-block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li > a:hover {
+    background-color: violet;
+    color: black;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: wheat;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: aquamarine; */
+    
+}
+
+aside {
+    background-color: thistle;
+    padding: 20px;
+    flex: 30%;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+
+}
+
+.fake-img {
+    background-color: turquoise;
+    width: 100%;
+    padding: 20px;
+}
+
+.photo-me {
+    height: 200px;
+}
+.photo-link {
+    height: 60px;
+}
+.photo-post {
+    height: 200px;
+}
+article {
+    /* background-color: yellowgreen; */
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 576px) {
+    main, nav ul {
+        flex-direction: column;
+        /* float 사용 시 main의 자손 태그인 aside, section의 width를 100%로 변경 */
+    }
+}
+
+/* 문제 1) flex box를 사용하여 만들어진 현재 사이트를 float을 사용하는 방식으로 하여 작성하세요 */
